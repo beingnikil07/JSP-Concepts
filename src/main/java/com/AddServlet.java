@@ -17,7 +17,7 @@ public class AddServlet extends HttpServlet{
 		
 		PrintWriter out=res.getWriter();	
 		//How we do changes design from servlets. We are using multiple out.print() statement,That's not a good approach 
-		//To overcome this problem JSP comes into the picture with a lot of features that servlets not have 
+		//To overcome this problem JSP comes into the picture with a lot of features that servlets no
 		out.print("<html><body bgcolor='cyan'>");
 		out.print("Output:"+c);
 		out.print("</body></html>");
