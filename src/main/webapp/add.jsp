@@ -13,8 +13,6 @@
 		int b=Integer.parseInt(request.getParameter("num2"));
 		int c=a+b;		
 		out.println("Output:"+c);
-		
-		
 		%>
 </body>
 </html>
