@@ -1,12 +1,4 @@
 
-<%
-
-	System.out.print("Scriptlet tag in global scope");
-
-
-%>
-
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -14,13 +6,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
-<%
-
-	System.out.print("scriptlet tag in head section");
-
-%>
-
 </head>
 <body>
 <!-- Declaration tag -->
@@ -30,20 +15,19 @@
 %>
 
 
+The value of e is :<%
+// Way one for accessing the variable which is not the part of service() method.
+out.print(e); 
+
+%>
 
 
-	<%
-		out.print("Hello World !");
-	
-	%>
+//way2:Accessing by using expression tag
+The value of e is:<%=e%>
 
-		<%
-				//This tag is known as scriptlet tag in jsp
-			int a=10;
-			int b=15;
-			out.print(a+b);
-			
-		
-		%>
+
+
+<!--  Expression tag   -->
+
 </body>
 </html>
