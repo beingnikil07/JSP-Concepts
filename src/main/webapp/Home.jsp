@@ -14,8 +14,12 @@
 	//getAttribute method returns an object so we have to typecast to string
 	String name=request.getAttribute("label").toString();	
      out.println(name);
-
+	out.print("<br>");
 %>
+	
+	<!--  Expression Language (EL) syntax to acess label variable -->
+	${label}
+
 
 </body>
 </html>
