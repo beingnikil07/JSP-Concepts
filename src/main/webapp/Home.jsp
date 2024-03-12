@@ -13,8 +13,11 @@
 		${student}
 	-->
 	
-	
-	${student.name}
+
+	<c:forEach items="${student}" var="s">
+			${s} <br>
+	</c:forEach>
+
 
 </body>
 </html>
