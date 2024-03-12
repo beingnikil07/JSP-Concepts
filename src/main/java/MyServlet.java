@@ -26,11 +26,6 @@ public class MyServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			String name="Nikhil kumar rana";
-			//setting the attributes in request 
-			request.setAttribute("label",name);
-			RequestDispatcher rd=request.getRequestDispatcher("Home.jsp");
-			rd.forward(request, response);
 			
 	}
 

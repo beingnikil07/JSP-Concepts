@@ -9,9 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<!--  Expression Language (EL) syntax to acess label variable -->
-	${label}
-	<br>
-	<c:out value="Hello Rana Jii"></c:out>
+	<c:import url="https://www.google.com"></c:import>
 </body>
 </html>
