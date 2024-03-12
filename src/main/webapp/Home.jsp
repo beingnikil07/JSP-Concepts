@@ -9,6 +9,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:import url="https://www.google.com"></c:import>
+	<!-- works gives you the hashcode 
+		${student}
+	-->
+	
+	
+	${student.name}
+
 </body>
 </html>
