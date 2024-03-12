@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix='c' uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,19 +9,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-
-<%
-
-	//getAttribute method returns an object so we have to typecast to string
-	String name=request.getAttribute("label").toString();	
-     out.println(name);
-	out.print("<br>");
-%>
-	
 	<!--  Expression Language (EL) syntax to acess label variable -->
 	${label}
-
-
+	<br>
+	<c:out value="Hello Rana Jii"></c:out>
 </body>
 </html>
